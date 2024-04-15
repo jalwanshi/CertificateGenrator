@@ -1,0 +1,119 @@
+/* Body styles */
+body {
+  background: linear-gradient(45deg, #ff6b6b, #ffb347, #8ec5fc, #3dd8c1);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+/* Common styles */
+.navbar,
+.height-control {
+  background: linear-gradient(45deg, #ff6b6b, #ffb347, #8ec5fc, #3dd8c1);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.navbar {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar label {
+  margin-right: 5px;
+}
+
+/* Form element styles */
+.navbar select,
+.navbar input[type="color"],
+.navbar input[type="number"],
+.navbar input[type="range"],
+.height-control input[type="range"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar select {
+  width: 150px;
+}
+
+.navbar input[type="color"] {
+  width: 30px;
+}
+
+.navbar input[type="number"] {
+  width: 70px;
+}
+
+.navbar input[type="range"],
+.height-control input[type="range"] {
+  width: 200px;
+}
+
+/* Hover and Focus effects */
+.navbar select:hover,
+.navbar input[type="color"]:hover,
+.navbar input[type="number"]:hover,
+.navbar input[type="range"]:hover,
+.navbar select:focus,
+.navbar input[type="color"]:focus,
+.navbar input[type="number"]:focus,
+.navbar input[type="range"]:focus {
+  outline: none;
+  background-color: #777;
+}
+
+/* Certificate preview styles */
+.certificate-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.certificate-preview img {
+  max-width: 100%;
+  max-height: 80vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.button {
+  background-color: inherit; /* Set background color to match body */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: inherit; /* Darker green for hover */
+}
